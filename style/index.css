@@ -1,4 +1,8 @@
 /* Add CSS styling here */
+html {
+    font-size: 62.5%;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -6,19 +10,19 @@ body{
     box-sizing: border-box;
     text-align: center;
     font-family: 'Lobster', cursive;
-    font-size: 18px;
+    
 }
 
 h1{
 text-align: left;
-padding: 20px;
-margin: 20px;
+padding: 2rem;
+margin: 2rem;
 color: crimson;
 
 }
  
 h2 {
- font-size: 50px;   
+ font-size: 5rem;   
  color: blueviolet;
 }
 
@@ -73,3 +77,31 @@ footer {
 a:hover {
     color: blue;
 }
+
+@media (max-width: 592px) {
+  
+    nav {
+      flex-direction: column;
+    } 
+    .hero {
+      flex-direction: column;
+      width: 70%;
+      height: auto;
+    }
+    
+    .group1{
+        flex-direction: column;
+        height: auto;
+    }
+    .group2{
+        flex-direction: column;
+        height: auto;
+    }
+
+.group1:hover {
+background-color: crimson;
+        }
+        .group2:hover {
+            background-color: darkcyan;
+        }
+        
